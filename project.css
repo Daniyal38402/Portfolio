@@ -1,0 +1,240 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+  margin: 1%;
+  padding: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #080808, #080808, #050505, #070707);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-smooth: always;
+  scroll-behavior: smooth;
+}
+
+/* Animated background */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.back-to-top {
+  display: inline-block;
+  margin: 20px auto 0;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: -45deg, #050505, #ac7979, #fc03e7, #ff0217;
+  text-decoration: none;
+  color: #ffffff;
+  background: #eb04c4;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #f805a7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.4);
+}
+
+/* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(209, 19, 200);
+    object-fit: cover;
+  }
+
+
+
+
+
+   /* Hero Section */
+.hero-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 35px 15px;
+  
+}
+
+.portfolio-heading {
+  box-shadow: 0 30px 45px rgba(225, 250, 3, 0.4);
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #8cb334, #686e09, #eaf86c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInSlide 1.2s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation */
+@keyframes fadeInSlide {
+  10% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 3;
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-section p {
+  color: #d1ff04;
+  margin-bottom: 25px;
+  font-size: 30px;
+  box-shadow: 0 4px 12px rgba(206, 252, 1, 0.3);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgb(253, 253, 252);
+  padding: 25px;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(221, 245, 3, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #020202;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #030303;
+  margin: 10px 0 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 14px;
+  text-decoration: none;
+  background: #765b8b;
+  color: rgb(5, 5, 5);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+  background: #2563eb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+   box-shadow: 0 25px 40px rgba(225, 250, 3, 0.4);
+  background-color: -45deg, #050505, #ac7979, #fc03e7, #ff0217;
+  padding: 30px 20px;
+  text-align: center;
+  color: #fcfcfd;
+  margin-top: 60px;
+  border-top: 1px solid #1e293b;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.site-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+.footer-socials a img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.footer-socials a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1) saturate(2);
+}
